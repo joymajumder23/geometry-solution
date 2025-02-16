@@ -19,20 +19,20 @@
                 <!-- Triangle -->
                 <div class="card card-side bg-base-100 shadow-xl">
                     <figure>
-                        <img class="p-3" src="./src/images/triangle.png" alt="Movie" />
+                        <img class="p-2" src="./src/images/triangle.png" alt="Movie" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
                         <p>Area(A) = 0.5 X b X h</p>
                         <div class="flex gap-3 items-center">
-                            <input class="bg-gray-100 p-2 rounded-xl" type="text" placeholder="b">
+                            <input id="triBase" class="bg-gray-100 p-2 rounded-xl" type="text" placeholder="b">
                         <span>cm</span>
-                        <input class="bg-gray-100 p-2 rounded-xl" type="text" placeholder="h">
+                        <input id="triHeight" class="bg-gray-100 p-2 rounded-xl" type="text" placeholder="h">
                         <span>cm</span>
                         </div>
-                            <h1 class="text-3xl font-bold mt-2"></h1>
+                            <h1 class="text-3xl mt-2">Area: <span id="tri-area"></span> cm<sup>2</sup></h1>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button class="btn btn-primary" onclick="calculateTriangleArea()">Calculate</button>
                         </div>
                     </div>
                 </div> 
@@ -40,7 +40,7 @@
                 <!-- Rectangle -->
                 <div class="card card-side bg-base-100 shadow-xl">
                     <figure>
-                        <img class="p-6" src="./src/images/triangle.png" alt="Movie" />
+                        <img class="p-2" src="./src/images/rectangle.png" alt="Movie" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Rectangle</h2>
@@ -61,11 +61,11 @@
                 <!-- Parallelogram -->
                 <div class="card card-side bg-base-100 shadow-xl">
                     <figure>
-                        <img class="p-3" src="./src/images/triangle.png" alt="Movie" />
+                        <img class="p-2" src="./src/images/parallelogram.png" alt="Movie" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Parallelogram</h2>
-                        <p>Area(A) = 0.5 X b X h</p>
+                        <p>Area(A) = b X h</p>
                         <div class="flex gap-3 items-center">
                             <input class="bg-gray-100 p-2 rounded-xl" type="text" placeholder="b">
                         <span>cm</span>
@@ -84,6 +84,8 @@
             </div>
         </div>
     </section>
+
+    <script src="./src/js/triangle.js"></script>
 </body>
 
 </html>
